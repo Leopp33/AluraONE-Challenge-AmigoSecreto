@@ -2,8 +2,8 @@
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: rgba(26, 75, 220, 0.83);
+    --color-button-hover: #052689d7;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -21,6 +21,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.celebracion_confetti
+{
+    position: absolute;
+    width: 100vw;
+    height: auto;
 }
 
 .main-content {
@@ -77,6 +83,7 @@ body {
     width: 100%;
     max-width: 600px;
     margin-top: 20px;
+    z-index: 1000;
 }
 
 .input-name {
@@ -88,8 +95,9 @@ body {
 }
 
 .button-container {
-    width: 300px;
     justify-content: center;
+    width: 300px;
+    z-index: 1000;
 }
 
 /* Estilos de entrada de texto */
@@ -137,7 +145,7 @@ ul {
 .result-list {
     margin-top: 15px;
     color: #05DF05;
-    font-size: 22px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
 }
